@@ -42,6 +42,9 @@ CRUD OPERATIONS:
       validation rules. If you are not specifying these options, you do not need to explicitly create the collection since MongoDB creates new collections when you 
       first store data for the collections.
       
+      LINK:https://www.mongodb.com/docs/manual/core/databases-and-collections/#std-label-collections
+      
+      
       
       
       
