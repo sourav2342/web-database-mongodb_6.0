@@ -21,3 +21,44 @@ the link to the installation process:https://medium.com/@nischandra/install-mong
 resoures link:https://stackoverflow.com/questions/73081708/mongo-exe-not-installed-in-version-6-0-0/75774152#75774152
 
 CRUD OPERATIONS:
+  
+  to create a new database cmd: use [name_of_db] // by using this cmd (mongosh shell) msongodb tell that we have switched to database [nam__].
+  show db :is used to see the list of db's.
+  type db: to find current working db.
+  
+  Collections
+      MongoDB stores documents in collections. Collections are analogous to tables in relational databases.
+
+      Create a Collection
+      If a collection does not exist, MongoDB creates the collection when you first store data for that collection.
+
+      db.myNewCollection2.insertOne( { x: 1 } )
+      db.myNewCollection3.createIndex( { y: 1 } )
+
+      Both the insertOne() and the createIndex() operations create their respective collection if they do not already exist. Be sure that the collection name follows         MongoDB Naming Restrictions.
+
+      Explicit Creation
+      MongoDB provides the db.createCollection() method to explicitly create a collection with various options, such as setting the maximum size or the documentation
+      validation rules. If you are not specifying these options, you do not need to explicitly create the collection since MongoDB creates new collections when you 
+      first store data for the collections.
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
