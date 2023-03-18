@@ -42,7 +42,17 @@ CRUD OPERATIONS:
       validation rules. If you are not specifying these options, you do not need to explicitly create the collection since MongoDB creates new collections when you 
       first store data for the collections.
       
+      adding collection to database db.collection.insertOne({_id:1,value:45,price:"65"})
+      
+      db.products.insertMany( [
+      { _id: 10, item: "large box", qty: 20 },
+      { _id: 11, item: "small box", qty: 55 },
+      { _id: 12, item: "medium box", qty: 30 }
+      ] );
+      
       LINK:https://www.mongodb.com/docs/manual/core/databases-and-collections/#std-label-collections
+      
+      
       
       
       
