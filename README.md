@@ -97,13 +97,49 @@ CRUD OPERATIONS:
           )
       
       
+to delete a databse switch to that database
+1) use db;
+2) db.dropDatabase();    
       
+Mongoose 
+
+const mong = require('mongoose');
+mong.connect("mongodb://localhost:27017/{name of db}", {userNewUrlParser:true});// to connect to an existing db or it creates the db;
+
+using native driver
+   const url ='mongodb://localhost:27017';
+   
+   const dbName = 'db';
+   cont client = new MongoClient(url, {useNewUrlParser:true});
+   
+   client.connect(function(err){
+      assert.equal(null, err);
       
+      const db = client.db(dbname);
       
-      
-      
-      
-      
+      findDocuments(db, function(){
+       client.close();
+      });
+   })
+
+inserting data in mongoose
+    
+    cont schema  = new mongoose.Schema({
+     name:String,
+     rating:Number,
+     review:String
+    });
+    
+    cont Fruit = mongoose.model("Fruit", schema);
+    
+    const f = new Fruit({
+    name:"adj",
+    rating:3,
+    review:"sdkfsd"
+    });
+    
+    f.save();
+    
       
       
       
